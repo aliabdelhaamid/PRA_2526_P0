@@ -9,7 +9,22 @@ BrazoRobotico::getY(){
 BrazoRobotico::getZ(){
 	return z;
 }
-BrazoRobotico::coger(){}
-BrazoRobotico::soltar(){}
-BrazoRobotico::mover(){}
+
+BrazoRobotico::getIsSujetando(){
+	return isSujetando;
+}
+
+BrazoRobotico::coger(){
+	isSujetando = true;
+}
+
+BrazoRobotico::soltar(){
+	isSujetando = false;
+}
+
+BrazoRobotico::mover(double x, double y, double z){
+	this -> x = x;
+	this -> y = y;
+	this -> z = z;
+}
 

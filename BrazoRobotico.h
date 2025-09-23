@@ -8,7 +8,7 @@ class BrazoRobotico{
 
 	public:
 	BrazoRobotico();
-	doublegetX();
+	double getX();
 	double getY();
 	double getZ();
 	bool getIsSujetando();
