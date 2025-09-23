@@ -15,5 +15,5 @@ class BrazoRobotico{
 
 	void coger();
 	void soltar();
-	void mover(double x, double y, double z)
+	void mover(double x, double y, double z);
 };

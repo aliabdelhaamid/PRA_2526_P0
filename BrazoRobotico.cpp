@@ -6,29 +6,29 @@ BrazoRobotico::BrazoRobotico(double x, double y, double z){
 	this->z = z;
 	isSujetando = false;
 }
-BrazoRobotico::getX(){
+double BrazoRobotico::getX(){
 	return x;
 }
-BrazoRobotico::getY(){
+double BrazoRobotico::getY(){
 	return y;
 }
-BrazoRobotico::getZ(){
+double BrazoRobotico::getZ(){
 	return z;
 }
 
-BrazoRobotico::getIsSujetando(){
+bool BrazoRobotico::getIsSujetando(){
 	return isSujetando;
 }
 
-BrazoRobotico::coger(){
+void BrazoRobotico::coger(){
 	isSujetando = true;
 }
 
-BrazoRobotico::soltar(){
+void BrazoRobotico::soltar(){
 	isSujetando = false;
 }
 
-BrazoRobotico::mover(double x, double y, double z){
+void BrazoRobotico::mover(double x, double y, double z){
 	this -> x = x;
 	this -> y = y;
 	this -> z = z;
